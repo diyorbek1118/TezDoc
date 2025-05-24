@@ -1,0 +1,245 @@
+/* Responsive Styles */
+
+/* Tablet (992px and below) */
+@media (max-width: 992px) {
+  /* General Adjustments */
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  /* Hero Section */
+  .hero {
+    padding: 3rem 0;
+  }
+
+  .hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  /* Steps Section */
+  .steps {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .step:not(:last-child)::after {
+    display: none;
+  }
+
+  /* About Page */
+  .about-grid {
+    flex-direction: column;
+  }
+
+  .mission-values {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  /* Contact Page */
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Auth Pages */
+  .auth-container {
+    grid-template-columns: 1fr;
+  }
+
+  .auth-image {
+    display: none;
+  }
+}
+
+/* Mobile (768px and below) */
+@media (max-width: 768px) {
+  /* Header & Navigation */
+  header .container {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    margin-right: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .auth-buttons {
+    margin-left: auto;
+  }
+
+  /* Hero Section */
+  .hero .container {
+    flex-direction: column;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  /* Services Section */
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Testimonials */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Footer */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Document Types Page */
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Document Preparation */
+  .form-progress {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .form-progress::before {
+    display: none;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group.full-width {
+    grid-column: auto;
+  }
+
+  .review-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team Section */
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* CTA Section */
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  /* Auth Forms */
+  .form-group-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Small Mobile (480px and below) */
+@media (max-width: 480px) {
+  /* General Adjustments */
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Container */
+  .container {
+    padding: 0 1rem;
+  }
+
+  /* Header */
+  .auth-buttons {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* Hero Section */
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Services and Steps */
+  .service-card, .step {
+    padding: 1.5rem;
+  }
+
+  /* Testimonials */
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  /* About Stats */
+  .about-stats {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Preparation Form */
+  .preparation-form {
+    padding: 1.5rem;
+  }
+
+  .form-buttons {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+
+  /* Map */
+  .map-placeholder {
+    height: 300px;
+  }
+
+  /* Social Auth */
+  .social-auth {
+    flex-direction: column;
+  }
+}
+
+/* Large Screens (1200px and above) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1400px;
+  }
+
+  .hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .services-grid,
+  .team-grid,
+  .documents-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
