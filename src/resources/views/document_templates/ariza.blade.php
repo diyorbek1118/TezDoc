@@ -2,125 +2,140 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <title>Ariza - Hajj</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ariza Namunasi</title>
   <style>
-    @page {
-      size: A4;
-      margin: 2cm;
-    }
-
     body {
-      font-family: "Times New Roman", serif;
-      background-color: #ffffff;
-      color: #000000;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: #e5e2c5;
+      color: #333;
+      line-height: 1.6;
       margin: 0;
-      padding: 20px;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
     }
-
+    
     .container {
       width: 210mm;
-      min-height: 297mm;
-      padding: 2cm;
+      height: 297mm;
+      margin: 20px;
+      padding: 40mm 25mm;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       box-sizing: border-box;
-      background-color: #ffffff;
     }
-
-    .center {
+    
+    .header {
       text-align: center;
+      margin-bottom: 50px;
     }
-
-    .right {
-      text-align: right;
-    }
-
-    .bold {
+    
+    .title {
+      font-size: 24px;
       font-weight: bold;
+      margin-bottom: 40px;
     }
-
-    .space {
-      margin-top: 20px;
+    
+    .address {
+      text-align: right;
+      margin-bottom: 40px;
+      max-width: 50%;
+      margin-left: auto;
     }
-
+    
+    .application-title {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
+    
+    .application-content {
+      text-align: justify;
+      margin-bottom: 50px;
+    }
+    
     .signature {
       display: flex;
       justify-content: space-between;
-      margin-top: 60px;
+      margin-top: auto;
+    }
+    
+    .signature-left, .signature-right {
+      width: 45%;
+    }
+    
+    .signature-right {
+      text-align: right;
     }
 
-    p {
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    .download-btn {
-      display: inline-block;
-      margin-bottom: 20px;
+    .download-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
       padding: 10px 20px;
-      background-color: #007BFF;
+      background-color: #4CAF50;
       color: white;
-      text-decoration: none;
-      border-radius: 5px;
-      font-size: 16px;
       border: none;
+      border-radius: 5px;
       cursor: pointer;
+      font-size: 16px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     }
 
-    .download-btn:hover {
-      background-color: #0056b3;
+    .download-button:hover {
+      background-color: #45a049;
+    }
+    
+    @media print {
+      body {
+        background-color: white;
+      }
+      .container {
+        margin: 0;
+        padding: 25mm;
+        box-shadow: none;
+      }
+      .download-button {
+        display: none;
+      }
     }
   </style>
 </head>
 <body>
-
-  <button class="download-btn" onclick="downloadPDF()">📄 PDF yuklab olish</button>
-
-  <div class="container" id="pdf-content">
-    <p class="center bold">НАМУНА</p>
-
-    <div class="right">
-      <p>Жиззах вилояти Ҳаж ва Умра ҳайъати раиси<br>
-      Л.Аҳмаджоновага</p>
-
-      <p>Ш.Рашидов тумани, Қулама маҳалласи,<br>
-      А.Икромов кўчаси, 20 уйда яшовчи<br>
-      Абдуллаев Абдулла томонидан</p>
+  <div class="container">
+    <div class="header">
+      <div class="title">NAMUNA</div>
     </div>
-
-    <p class="center bold space">Ариза</p>
-
-    <p class="space">
-      Аризамнинг мазмуни шундан иборатки, мен бу йили ҳаж сафарига
-      боришга шароитим етарли бўлмаганлиги сабабли кейинги йилларга
-      қолдиришингизни сўрайман.
-    </p>
-
+    
+    <div class="address">
+      <p>Jizzax viloyati Haj va Umra hayrati raisi<br>
+      L.Ahmadjonovga</p>
+      
+      <p>Sh.Rashidov tumani, Qo‘lama mahallasi,<br>
+      A.Ikromov ko‘chasi, 20-uyda yashovchi<br>
+      Abdullayev Abdulla tomonidan</p>
+    </div>
+    
+    <div class="application-title">Ariza</div>
+    
+    <div class="application-content">
+      <p>Arizamning mazmuni shundan iboratki, men bu yili haj safariga borishga sharoitim yetarli bo‘lmaganligi sababli keyingi yillarga qoldirishingizni so‘rayman.</p>
+    </div>
+    
     <div class="signature">
-      <div>A.Абдуллаев</div>
-      <div>имзо</div>
-      <div>08.05.2023 йил</div>
+      <div class="signature-left">
+        <p>A.Abdullayev</p>
+      </div>
+      <div class="signature-right">
+        <p>imzo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 08.05.2023 yil</p>
+      </div>
     </div>
   </div>
-
-  <!-- JS kutubxonalar -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-
-  <script>
-    async function downloadPDF() {
-      const { jsPDF } = window.jspdf;
-      const content = document.getElementById("pdf-content");
-
-      const canvas = await html2canvas(content, { scale: 2 });
-      const imgData = canvas.toDataURL("image/png");
-
-      const pdf = new jsPDF("p", "mm", "a4");
-      const imgProps = pdf.getImageProperties(imgData);
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("haj-ariza.pdf");
-    }
-  </script>
+  
+  <a class="download-button" href="{{ route('ariza.pdf') }}">Юклаб олиш</a>
 </body>
 </html>
