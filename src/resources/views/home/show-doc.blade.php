@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="uz">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Docs - Asosiy sahifa</title>
+@extends('layout.main')
+  
+@section('content')
+    
+@section('title', 'Show All Documents')
+
     <style>
 * {
   margin: 0;
@@ -11,14 +11,14 @@
   box-sizing: border-box;
 }
 
-body {
+.docs-container {
   font-family: 'Google Sans', 'Roboto', Arial, sans-serif;
   background-color: #fff;
   color: #202124;
   padding: 100px 50px;
 }
 
-.header {
+.docs-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,19 +28,19 @@ body {
   gap: 12px;
 }
 
-.header-left {
+.docs-header-left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 
-.header-title {
+.docs-header-title {
   font-size: 18px;
   color: #5f6368;
   font-weight: 400;
 }
 
-.header-right {
+.docs-header-right {
   display: flex;
   align-items: center;
   gap: 12px;
@@ -92,7 +92,7 @@ body {
   transform: translateY(-2px);
 }
 
-.template-preview {
+.template-predocs-view {
   width: 100%;
   height: 180px;
   border: 1px solid #dadce0;
@@ -105,18 +105,18 @@ body {
   overflow: hidden;
 }
 
-.template-preview.blank {
+.template-predocs-view.blank {
   background: white;
 }
 
-.template-preview.blank::before {
+.template-predocs-view.blank::before {
   content: '';
   width: 50px;
   height: 50px;
   background: linear-gradient(to right, #4285f4 0%, #4285f4 25%, #ea4335 25%, #ea4335 50%, #fbbc04 50%, #fbbc04 75%, #34a853 75%, #34a853 100%);
 }
 
-.template-preview img {
+.template-predocs-view img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -137,7 +137,7 @@ body {
   padding: 100px 24px;
 }
 
-.recent-header {
+.recent-docs-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -153,12 +153,12 @@ body {
   font-weight: 500;
 }
 
-.view-options {
+.docs-view-options {
   display: flex;
   gap: 8px;
 }
 
-.view-btn {
+.docs-view-btn {
   width: 40px;
   height: 40px;
   border: none;
@@ -170,7 +170,7 @@ body {
   justify-content: center;
 }
 
-.view-btn:hover {
+.docs-view-btn:hover {
   background: #f1f3f4;
 }
 
@@ -207,14 +207,14 @@ body {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.document-preview {
+.document-predocs-view {
   width: 100%;
   height: 280px;
   background: white;
   border-bottom: 1px solid #dadce0;
 }
 
-.document-preview img {
+.document-predocs-view img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -291,13 +291,13 @@ body {
 
 /* Desktop - Large screens */
 @media (max-width: 1400px) {
-  .header, .recent-header {
+  .docs-header, .recent-docs-header {
     padding: 10px 300px;
   }
 }
 
 @media (max-width: 1200px) {
-  .header, .recent-header {
+  .docs-header, .recent-docs-header {
     padding: 10px 150px;
   }
   body {
@@ -307,7 +307,7 @@ body {
 
 /* Tablet - Medium screens */
 @media (max-width: 992px) {
-  .header, .recent-header {
+  .docs-header, .recent-docs-header {
     padding: 10px 80px;
   }
   body {
@@ -324,14 +324,14 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 14px;
   }
-  .header-title {
+  .docs-header-title {
     font-size: 16px;
   }
 }
 
 /* Tablet - Small screens */
 @media (max-width: 768px) {
-  .header, .recent-header {
+  .docs-header, .recent-docs-header {
     padding: 10px 40px;
   }
   body {
@@ -344,21 +344,21 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
     gap: 12px;
   }
-  .template-preview {
+  .template-predocs-view {
     height: 150px;
   }
   .documents-grid {
     grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
     gap: 12px;
   }
-  .document-preview {
+  .document-predocs-view {
     height: 240px;
   }
   .owner-dropdown {
     font-size: 13px;
     padding: 6px 10px;
   }
-  .view-btn {
+  .docs-view-btn {
     width: 36px;
     height: 36px;
   }
@@ -366,33 +366,33 @@ body {
 
 /* Mobile - Large */
 @media (max-width: 640px) {
-  .header {
+  .docs-header {
     padding: 12px 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
-  .recent-header {
+  .recent-docs-header {
     padding: 12px 20px;
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
   }
-  .recent-header > div {
+  .recent-docs-header > div {
     width: 100%;
     justify-content: space-between;
   }
   body {
     padding: 40px 10px;
   }
-  .header-title {
+  .docs-header-title {
     font-size: 15px;
   }
   .template-grid {
     grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
     gap: 10px;
   }
-  .template-preview {
+  .template-predocs-view {
     height: 130px;
   }
   .template-name {
@@ -405,7 +405,7 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
     gap: 10px;
   }
-  .document-preview {
+  .document-predocs-view {
     height: 200px;
   }
   .document-title {
@@ -421,7 +421,7 @@ body {
 
 /* Mobile - Small */
 @media (max-width: 480px) {
-  .header, .recent-header {
+  .docs-header, .recent-docs-header {
     padding: 10px 16px;
   }
   body {
@@ -434,14 +434,14 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 8px;
   }
-  .template-preview {
+  .template-predocs-view {
     height: 120px;
   }
   .documents-grid {
     grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
     gap: 8px;
   }
-  .document-preview {
+  .document-predocs-view {
     height: 180px;
   }
   .document-info {
@@ -451,7 +451,7 @@ body {
     font-size: 12px;
     padding: 6px 8px;
   }
-  .view-btn, .icon-btn {
+  .docs-view-btn, .icon-btn {
     width: 32px;
     height: 32px;
   }
@@ -470,10 +470,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 6px;
   }
-  .document-preview {
+  .document-predocs-view {
     height: 160px;
   }
-  .header-title {
+  .docs-header-title {
     font-size: 14px;
   }
   .recent-title {
@@ -481,13 +481,13 @@ body {
   }
 }
     </style>
-</head>
-<body>
-    <div class="header">
-        <div class="header-left">
-            <div class="header-title">Создать документ</div>
+
+    <div class="docs-container">
+        <div class="docs-header">
+        <div class="docs-header-left">
+            <div class="docs-header-title">Создать документ</div>
         </div>
-        <div class="header-right">
+        <div class="docs-header-right">
             <div class="owner-dropdown">Галерея шаблонов ⌄</div>
             <button class="icon-btn">⋮</button>
         </div>
@@ -496,11 +496,11 @@ body {
     <div class="templates">
         <div class="template-grid">
             <div class="template-card">
-                <div class="template-preview blank"></div>
+                <div class="template-predocs-view blank"></div>
                 <div class="template-name">Пустой документ</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <rect fill="#f8f9fa" width="100" height="140"/>
                         <rect fill="#dadce0" x="15" y="15" width="70" height="4"/>
@@ -512,7 +512,7 @@ body {
                 <div class="template-type">Мята</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <rect fill="#f8f9fa" width="100" height="140"/>
                         <rect fill="#dadce0" x="10" y="15" width="35" height="110"/>
@@ -523,7 +523,7 @@ body {
                 <div class="template-type">С засечками</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <rect fill="#f8f9fa" width="100" height="140"/>
                         <rect fill="#ff6b6b" x="15" y="15" width="70" height="4"/>
@@ -535,7 +535,7 @@ body {
                 <div class="template-type">Коралл</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <polygon fill="#4db8a5" points="0,0 100,0 100,60 80,80 0,80"/>
                         <polygon fill="#d4745f" points="0,80 80,80 100,60 100,140 0,140"/>
@@ -545,7 +545,7 @@ body {
                 <div class="template-type">Тропики</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <rect fill="#f8f9fa" width="100" height="140"/>
                         <polygon fill="#e91e63" points="80,100 100,100 100,140 80,140"/>
@@ -556,7 +556,7 @@ body {
                 <div class="template-type">Геометрия</div>
             </div>
             <div class="template-card">
-                <div class="template-preview">
+                <div class="template-predocs-view">
                     <svg width="100" height="140" viewBox="0 0 100 140">
                         <rect fill="#f8f9fa" width="100" height="140"/>
                         <rect fill="#dadce0" x="20" y="60" width="60" height="50"/>
@@ -570,24 +570,24 @@ body {
     </div>
 
     <div class="recent-section">
-        <div class="recent-header">
+        <div class="recent-docs-header">
             <h2 class="recent-title">Недавние документы</h2>
             <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
                 <div class="owner-dropdown">Владелец: кто угодно ▼</div>
-                <div class="view-options">
-                    <button class="view-btn">☰</button>
-                    <button class="view-btn">⚏</button>
-                    <button class="view-btn">▭</button>
+                <div class="docs-view-options">
+                    <button class="docs-view-btn">☰</button>
+                    <button class="docs-view-btn">⚏</button>
+                    <button class="docs-view-btn">▭</button>
                 </div>
             </div>
         </div>
 
         <div class="documents-grid">
             <div class="document-card">
-                <div class="document-preview">
+                <div class="document-predocs-view">
                     <svg width="100%" height="100%" viewBox="0 0 220 280">
                         <rect fill="white" width="220" height="280"/>
-                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
+                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Predocs-view</text>
                     </svg>
                 </div>
                 <div class="document-info">
@@ -605,10 +605,10 @@ body {
             </div>
 
             <div class="document-card">
-                <div class="document-preview">
+                <div class="document-predocs-view">
                     <svg width="100%" height="100%" viewBox="0 0 220 280">
                         <rect fill="white" width="220" height="280"/>
-                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
+                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Predocs-view</text>
                     </svg>
                 </div>
                 <div class="document-info">
@@ -626,10 +626,10 @@ body {
             </div>
 
             <div class="document-card">
-                <div class="document-preview">
+                <div class="document-predocs-view">
                     <svg width="100%" height="100%" viewBox="0 0 220 280">
                         <rect fill="white" width="220" height="280"/>
-                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
+                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Predocs-view</text>
                     </svg>
                 </div>
                 <div class="document-info">
@@ -647,10 +647,10 @@ body {
             </div>
 
             <div class="document-card">
-                <div class="document-preview">
+                <div class="document-predocs-view">
                     <svg width="100%" height="100%" viewBox="0 0 220 280">
                         <rect fill="white" width="220" height="280"/>
-                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
+                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Predocs-view</text>
                     </svg>
                 </div>
                 <div class="document-info">
@@ -668,10 +668,10 @@ body {
             </div>
 
             <div class="document-card">
-                <div class="document-preview">
+                <div class="document-predocs-view">
                     <svg width="100%" height="100%" viewBox="0 0 220 280">
                         <rect fill="white" width="220" height="280"/>
-                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
+                        <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Predocs-view</text>
                     </svg>
                 </div>
                 <div class="document-info">
@@ -689,5 +689,5 @@ body {
             </div>
         </div>
     </div>
-</body>
-</html>
+    </div>
+@endsection

@@ -6,7 +6,7 @@ use App\Http\Controllers\Auth\RegisterController;
 
 
 Route::get('/', function () {
-    return view('home');
+    return view('/home.home');
 });
 
 
@@ -36,11 +36,14 @@ Route::get('testdoc',function(){
 });
 
 Route::get('form',function(){
-    return view('form_data');
+    return view('.home.form_data');
 });
 
-Route::get('aaa',function(){
-    return view('index');
+Route::get('show',function(){
+    return view('home.show-doc');
+});
+Route::get('test',function(){
+    return view('test');
 });
 
 
