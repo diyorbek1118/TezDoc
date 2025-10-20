@@ -37,15 +37,14 @@ class LoginController extends Controller
 
 
 
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        $request->session()->invalidate();
-        $request->session()->regenerateToken();
+  public function logout(Request $request)
+{
+    Auth::logout();
+    $request->session()->invalidate();
+    $request->session()->regenerateToken();
 
-        Session::flash('success', 'Siz tizimdan chiqdingiz.');
-        return redirect()->route('login');
+    Session::flash('success', 'Siz tizimdan chiqdingiz.');
+    return redirect()->route('home');
+}
 
-
-    }
 }

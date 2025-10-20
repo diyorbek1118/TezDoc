@@ -228,7 +228,7 @@
 </div>
 
 <div class="btn-container">
-    <button id="showAllBtn">Hammasini ko'rish</button>
+    <a id="showAllBtn" href="{{route('show')}}">Hammasini ko'rish</a>
 </div>
 
 <script>

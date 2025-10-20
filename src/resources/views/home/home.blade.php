@@ -13,13 +13,13 @@
               <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h6>Digital Media Agency</h6>
-                    <h2>We Boost Your Website Traffic</h2>
-                    <p>This template is brought to you by TemplateMo website. Feel free to use this for a commercial purpose. You are not allowed to redistribute the template ZIP file on any other template website. Thank you.</p>
+                    <h6>Onlayn hujjat yaratish xizmati</h6>
+                    <h2>AI asosidagi yuridik hujjat generatori.</h2>
+                    <p>TezDoc – hujjat yaratishni soddalashtiruvchi tizim. Ushbu shablon faqat shaxsiy yoki tijorat loyihalaringizda foydalanish uchun mo‘ljallangan.</p>
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section">
-                      <a href="#contact">Free Quote</a>
+                      <a href="#contact">Yo‘riqnoma</a>
                     </div>
                   </div>
                 </div>
@@ -27,7 +27,7 @@
             </div>
             <div class="col-lg-6">
               <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="{{ asset('images/slider-dec-v3.png') }}" alt="">
+                <img src="{{ asset('images/document-generator.png') }}" alt="">
               </div>
             </div>
           </div>
@@ -49,35 +49,35 @@
             <div class="col-lg-6 align-self-center  wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
               
                 <div class="section-heading">
-                  <h6>About Us</h6>
-                  <h4>Who is DigiMedia <em>Agency</em></h4>
+                  <h6>Biz haqimizda</h6>
+                  <h4>Tez hujjatlar,  <em>Oson yechimlar</em></h4>
                   <div class="line-dec"></div>
                 </div>
-                <p>We hope this DigiMedia template is useful for your work. You can use this template for any purpose. You may <a rel="nofollow" href="http://paypal.me/templatemo" target="_blank">contribute a little amount</a> via PayPal to <a href="https://templatemo.com/contact" target="_blank">support TemplateMo</a> in creating new templates regularly.</p>
+                <p>TezDoc loyihasi sizga hujjatlarni tez, qulay va xatolarsiz yaratishda yordam beradi. Platformadan shaxsiy va tijorat maqsadlarida bemalol foydalanishingiz mumkin.TezDoc — zamonaviy O‘zbekiston uchun yaratilgan hujjat tizimi..</p>
                 <div class="skills">
   <div class="skill">
     <div class="outer-circle" style="--percent:90; --color:#4da6e7;">
       <div class="inner-circle">
         <h3>90%</h3>
-        <p>Coding</p>
+        <p>Tezlik</p>
       </div>
     </div>
   </div>
 
   <div class="skill">
-    <div class="outer-circle" style="--percent:80; --color:#7b61ff;">
+    <div class="outer-circle" style="--percent:85; --color:#7b61ff;">
       <div class="inner-circle">
-        <h3>80%</h3>
-        <p>Photoshop</p>
+        <h3>85%</h3>
+        <p>Qulaylik</p>
       </div>
     </div>
   </div>
 
   <div class="skill">
-    <div class="outer-circle" style="--percent:80; --color:#ff7b39;">
+    <div class="outer-circle" style="--percent:95; --color:#ff7b39;">
       <div class="inner-circle">
-        <h3>80%</h3>
-        <p>Animation</p>
+        <h3>95%</h3>
+        <p>Samaradorlik</p>
       </div>
     </div>
   </div>
@@ -95,8 +95,8 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Our Services</h6>
-            <h4>What Our Agency <em>Provides</em></h4>
+            <h6>Bizning xizmatlar</h6>
+            <h4>Platformamiz  <em>imkoniyatlari</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
@@ -108,32 +108,32 @@
                   <div class="menu">
                     <div class="first-thumb active">
                       <div class="thumb">
-                        <span class="icon"><img src="{{ asset('images/service-icon-03.png') }}" alt=""></span>
-                        Apartments
+                        <span class="icon"><img src="{{ asset('images/ai-doc-gen.png') }}" alt=""></span>
+                        AI generatsiya
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
                         <span class="icon"><img src="{{ asset('images/service-icon-03.png') }}" alt=""></span>
-                        Food &amp; Life
+                        AI  &amp; tahrir
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="{{ asset('images/service-icon-03.png') }}" alt=""></span>
-                        Cars
+                        <span class="icon"><img src="{{ asset('images/template-doc.png') }}" alt=""></span>
+                        Shablonlar
                       </div>
                     </div>
                     <div>
                       <div class="thumb">                 
-                        <span class="icon"><img src="{{ asset('images/service-icon-04.png') }}" alt=""></span>
-                        Shopping
+                        <span class="icon"><img src="{{ asset('images/convert-doc.png') }}" alt=""></span>
+                        PDF/DOC convert
                       </div>
                     </div>
                     <div class="last-thumb">
                       <div class="thumb">                 
-                        <span class="icon"><img src="{{ asset('images/service-icon-03.png') }}" alt=""></span>
-                        Traveling
+                        <span class="icon"><img src="{{ asset('images/safe-doc.png') }}" alt=""></span>
+                        Xavfsiz saqlash
                       </div>
                     </div>
                   </div>
@@ -146,17 +146,16 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>SEO Analysis &amp; Daily Reports</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <h4>Yangi Avlod Kontent Yaratish Texnologiyasi</h4>
+                                <p>Sun’iy intellekt asosida ishlovchi ilg‘or tizim yordamida siz matn, maqola, reklama yoki hujjatlarni bir necha soniyada yaratishingiz mumkin. AI texnologiyasi sizning uslubingizni, maqsadingizni va soha talablarini tahlil qilib, aniq va sifatli natija taqdim etadi.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Matn yaratish</span> <span><i class="fa fa-check"></i> AI tahrir</span> <span><i class="fa fa-check"></i> Avto kontent</span>
+                                  <span><i class="fa fa-check"></i> AI yordamchi</span> <span><i class="fa fa-check"></i> Kreativ yozuv</span> <span><i class="fa fa-check"></i> Yozuv tizimi</span></div>
+                                <p>Har bir foydalanuvchi uchun moslashuvchan, tezkor va ishonchli yechimlarni taklif etadi.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="{{ asset('images/services-image.jpg') }}" alt="">
+                                <img src="{{ asset('images/ai-generator.png') }}" alt="">
                               </div>
                             </div>
                           </div>
@@ -169,17 +168,18 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Healthy Food &amp; Life</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <h4>AI  &amp; Tahrirlash</h4>
+                                <p>AI bilan tahrirlash yordamida yuqori darajasidagi natijani qisqa vaqt ichida qo‘lga kiritadi. Ushbu texnologiya kontentchi, marketing mutaxassislari va yozuvchilar uchun ideal yechim bo‘lib, matnlarni yaratish jarayonini avtomatlashtiradi.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Ai tahrir</span> <span><i class="fa fa-check"></i> Gramatika</span> <span><i class="fa fa-check"></i> Kontent</span>
+                                  <span><i class="fa fa-check"></i> Uslub</span> <span><i class="fa fa-check"></i> Optimizatsiya</span> </div>
+                                <p>
+                                  Sun’iy intellekt yordamida matnni tahrirlash — yozuvni tez, aniq.
+                                </p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="{{ asset('images/services-image-02.jpg') }}" alt="">
+                                <img src="{{ asset('images/edit-doc.png') }}" alt="">
                               </div>
                             </div>
                           </div>
@@ -192,12 +192,11 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Car Re-search &amp; Transport</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <h4>Optimallashtirilgan Shablonlar</h4>
+                                <p>Shablonlar — bu oldindan tayyorlangan matn, dizayn yoki strukturali kontent andozalari bo‘lib, ularni ishlatib tez va samarali kontent yaratish mumkin.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Shablonlar</span> <span><i class="fa fa-check"></i> Moslashuvchan</span> <span><i class="fa fa-check"></i> Professional</span>
+                                  <span><i class="fa fa-check"></i> Automatlashtirilgan</span> <span><i class="fa fa-check"></i> Samarali</span> <span><i class="fa fa-check"></i> Tezkor</span></div>
+                                <p>Moslashuvchan shablonlar bilan yozuv jarayoni samarali bo‘ladi.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -215,17 +214,16 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Online Shopping &amp; Tracking ID</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <h4>Tez va oson PDF/DOC konvertatsiya vositasi</h4>
+                                <p>PDF/DOC konvertor — bu hujjatlarni bir formatdan boshqa formatga tez va oson o‘zgartirish vositasi. Foydalanuvchi PDF faylni DOC (Word) ga yoki aksincha DOC faylni PDF ga aylantirishi mumkin.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Avtomatik</span> <span><i class="fa fa-check"></i> PDF ↔ DOC</span> <span><i class="fa fa-check"></i> Sifatli</span>
+                                  <span><i class="fa fa-check"></i> Tezkor</span> <span><i class="fa fa-check"></i> Format</span> <span><i class="fa fa-check"></i> Professional</span></div>
+                                <p>PDF va DOC fayllarni oson, tez va professional tarzda konvertatsiya qilish imkoniyati.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="{{ asset('images/services-image-04.jpg') }}" alt="">
+                                <img src="{{ asset('images/convertor-doc.png') }}" alt="">
                               </div>
                             </div>
                           </div>
@@ -238,17 +236,16 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Enjoy &amp; Travel</h4>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt ut labore et dolore kengan darwin doerski token.
-                                  dover lipsum lorem and the others.</p>
-                                <div class="ticks-list"><span><i class="fa fa-check"></i> Optimized Template</span> <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span>
-                                  <span><i class="fa fa-check"></i> Data Info</span> <span><i class="fa fa-check"></i> SEO Analysis</span> <span><i class="fa fa-check"></i> Optimized Template</span></div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sedr do eiusmod deis tempor incididunt.</p>
+                                <h4>Ma’lumotlaringiz xavfsizligini ta’minlash tizimi</h4>
+                                <p>Xavfsizlik — bu foydalanuvchi va tizim ma’lumotlarini himoya qilish jarayoni. U ma’lumotlarni ruxsatsiz kirishlardan, buzilishlardan, o‘g‘rilik va zararli dasturlardan saqlashni ta’minlaydi.</p>
+                                <div class="ticks-list"><span><i class="fa fa-check"></i> Xavfsizlik</span> <span><i class="fa fa-check"></i>Shifrlash</span> <span><i class="fa fa-check"></i> Autentifikatsiya</span>
+                                  <span><i class="fa fa-check"></i> Nazorat</span> <span><i class="fa fa-check"></i> Ma’lumot xavfsizligi</span> <span><i class="fa fa-check"></i>Ishonchli tizim</span></div>
+                                <p>Xavfsizlik foydalanuvchi ishonchini oshiradi, kontent va ma’lumotlarni himoyalaydi hamda tizimning uzluksiz ishlashini ta’minlaydi.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
                               <div class="right-image">
-                                <img src="{{ asset('images/services-image.jpg') }}" alt="">
+                                <img src="{{ asset('images/security-doc.png') }}" alt="">
                               </div>
                             </div>
                           </div>
@@ -306,8 +303,8 @@
       <div class="row">
         <div class="col-lg-5">
           <div class="section-heading wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.3s">
-            <h6>Our Portofolio</h6>
-            <h4>See Our Recent <em>Projects</em></h4>
+            <h6>Bizning Hujjatlar</h6>
+            <h4>Tezkor Hujjatlar<em> Yarating</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
@@ -424,13 +421,14 @@
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <div class="section-heading wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-            <h6>Contact Us</h6>
-            <h4>Get In Touch With Us <em>Now</em></h4>
+            <h6>Biz bilan bog'lanish</h6>
+            <h4>Biz bilan bog'laning <em>Hozir</em></h4>
             <div class="line-dec"></div>
           </div>
         </div>
         <div class="col-lg-12 wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0.25s">
           <form id="contact" action="" method="post">
+            @csrf
             <div class="row">
               <div class="col-lg-12">
                 <div class="contact-dec">
@@ -439,7 +437,14 @@
               </div>
               <div class="col-lg-5">
                 <div id="map">
-                  <iframe src="https://maps.google.com/maps?q=Av.+L%C3%BAcio+Costa,+Rio+de+Janeiro+-+RJ,+Brazil&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="636px" frameborder="0" style="border:0" allowfullscreen></iframe>
+<iframe 
+  src="https://maps.google.com/maps?q=Samarkand,+Uzbekistan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+  width="100%" 
+  height="636px" 
+  frameborder="0" 
+  style="border:0" 
+  allowfullscreen>
+</iframe>
                 </div>
               </div>
               <div class="col-lg-7">
@@ -449,7 +454,7 @@
                       <div class="info-post">
                         <div class="icon">
                           <img src="{{ asset('images/phone-icon.png') }}" alt="">
-                          <a href="#">010-020-0340</a>
+                          <a href="#">+998 77 056 18 36</a>
                         </div>
                       </div>
                     </div>
@@ -457,7 +462,7 @@
                       <div class="info-post">
                         <div class="icon">
                           <img src="{{ asset('images/email-icon.png') }}" alt="">
-                          <a href="#">our@email.com</a>
+                          <a href="#">sodikhovd@gmail.com</a>
                         </div>
                       </div>
                     </div>
@@ -465,7 +470,7 @@
                       <div class="info-post">
                         <div class="icon">
                           <img src="{{ asset('images/location-icon.png') }}" alt="">
-                          <a href="#">123 Rio de Janeiro</a>
+                          <a href="#">Tatu Samarqand filiali</a>
                         </div>
                       </div>
                     </div>
