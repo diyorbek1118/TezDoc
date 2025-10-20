@@ -37,12 +37,12 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Asosiy</a></li>
-              <li class="scroll-to-section"><a href="#about">Biz Haqimizda</a></li>
-              <li class="scroll-to-section"><a href="#services">Xizmatlar</a></li>
+              <li class="scroll-to-section"><a href="{{ url('/#top') }}" class="active">Asosiy</a></li>
+              <li class="scroll-to-section"><a href="{{ url('/#about') }}">Biz Haqimizda</a></li>
+              <li class="scroll-to-section"><a href="{{ url('/#services') }}">Xizmatlar</a></li>
               <li class="scroll-to-section"><a href="{{ route('show') }}">Hujjatlar</a></li>
-              <li class="scroll-to-section"><a href="#blog">Blog</a></li>
-              <li class="scroll-to-section"><a href="#contact">Kontakt</a></li> 
+              <li class="scroll-to-section"><a href="{{ url('/#blog') }}">Blog</a></li>
+              <li class="scroll-to-section"><a href="{{ url('/#contact') }}">Kontakt</a></li> 
               <li class="scroll-to-section">
                   
                @guest
@@ -53,7 +53,7 @@
 @else
     
                       <button class="profile-button" id="profileBtn">
-                        <div class="profile-button-avatar">EH</div>
+                        <div class="profile-button-avatar">AD</div>
                         <span class="profile-button-name">Eddy Hernandez</span>
                     </button>
 

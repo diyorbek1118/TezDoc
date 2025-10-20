@@ -38,10 +38,15 @@ Route::get('/documents', [DocumentController::class, 'index'])->name('documents.
 Route::get('testdoc',function(){
     return view('document_template.shaxsiy_doc.aybdor_xodimga_jazo_qullash_bildirgi');
 });
-
-Route::get('form',function(){
-    return view('.home.form_data');
+Route::get('shartnoma',function(){
+    return view('document_template.shartnoma_doc.haqdan_voz_kechish_qarzni_utqazish');
 });
+Route::get('ariza',function(){
+    return view('document_template.ariza_doc.doimiy_yashash_manzil_iltimosnoma');
+});
+Route::get('form',function(){
+    return view('home.form_data');
+})->name('form');
 
 Route::get('show',function(){
     return view('home.show-doc');

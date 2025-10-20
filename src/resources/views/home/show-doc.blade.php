@@ -150,6 +150,7 @@
 
 .template-card {
   flex: 0 0 150px;
+  display: inline-block;
   background: white;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
@@ -223,6 +224,7 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.2s;
+  display: inline-block;
 }
 
 .document-card:hover {
@@ -514,11 +516,11 @@
 
 <div class="templates">
   <div class="template-grid">
-    <div class="template-card">
+    <a class="template-card" href="">
       <div class="template-predocs-view blank"></div>
       <div class="template-name">Пустой документ</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <rect fill="#f8f9fa" width="100" height="140"/>
@@ -529,8 +531,8 @@
       </div>
       <div class="template-name">Письмо</div>
       <div class="template-type">Мята</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <rect fill="#f8f9fa" width="100" height="140"/>
@@ -540,8 +542,8 @@
       </div>
       <div class="template-name">Резюме</div>
       <div class="template-type">С засечками</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <rect fill="#f8f9fa" width="100" height="140"/>
@@ -552,8 +554,8 @@
       </div>
       <div class="template-name">Резюме</div>
       <div class="template-type">Коралл</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <polygon fill="#4db8a5" points="0,0 100,0 100,60 80,80 0,80"/>
@@ -562,8 +564,8 @@
       </div>
       <div class="template-name">Проектное предл...</div>
       <div class="template-type">Тропики</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <rect fill="#f8f9fa" width="100" height="140"/>
@@ -573,8 +575,8 @@
       </div>
       <div class="template-name">Брошюра</div>
       <div class="template-type">Геометрия</div>
-    </div>
-    <div class="template-card">
+    </a>
+    <a class="template-card"  href="">
       <div class="template-predocs-view">
         <svg width="100" height="140" viewBox="0 0 100 140">
           <rect fill="#f8f9fa" width="100" height="140"/>
@@ -584,7 +586,7 @@
       </div>
       <div class="template-name">Доклад</div>
       <div class="template-type">Люкс</div>
-    </div>
+    </a>
   </div>
 </div>
 
@@ -606,7 +608,7 @@
   </div>
 
   <div class="documents-grid">
-    <div class="document-card">
+    <a class="document-card" href="">
       <div class="document-predocs-view">
         <svg width="100%" height="100%" viewBox="0 0 220 280">
           <rect fill="white" width="220" height="280"/>
@@ -626,9 +628,9 @@
         </div>
         <button class="more-btn">⋮</button>
       </div>
-    </div>
+    </a>
 
-    <div class="document-card">
+    <a class="document-card" href="">
       <div class="document-predocs-view">
         <svg width="100%" height="100%" viewBox="0 0 220 280">
           <rect fill="white" width="220" height="280"/>
@@ -647,9 +649,9 @@
         </div>
         <button class="more-btn">⋮</button>
       </div>
-    </div>
+    </a>
 
-    <div class="document-card">
+    <a class="document-card" href="{{ route('form') }}">
       <div class="document-predocs-view">
         <svg width="100%" height="100%" viewBox="0 0 220 280">
           <rect fill="white" width="220" height="280"/>
@@ -668,9 +670,9 @@
         </div>
         <button class="more-btn">⋮</button>
       </div>
-    </div>
+    </a>
 
-    <div class="document-card">
+    <a class="document-card" href="">
       <div class="document-predocs-view">
         <svg width="100%" height="100%" viewBox="0 0 220 280">
           <rect fill="white" width="220" height="280"/>
@@ -689,9 +691,9 @@
         </div>
         <button class="more-btn">⋮</button>
       </div>
-    </div>
+    </a>
 
-    <div class="document-card">
+    <a class="document-card" href="">
       <div class="document-predocs-view">
         <svg width="100%" height="100%" viewBox="0 0 220 280">
           <rect fill="white" width="220" height="280"/>
@@ -710,7 +712,7 @@
         </div>
         <button class="more-btn">⋮</button>
       </div>
-    </div>
+    </a>
   </div>
 </div>
 
