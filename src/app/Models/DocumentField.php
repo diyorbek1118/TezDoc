@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class DocumentField extends Model
 {
-    /** @use HasFactory<\Database\Factories\DocumentFieldFactory> */
     use HasFactory;
+    protected $table = 'document_fields';
+    protected $fillable = [
+        'document_id',
+        'ariza_data',
+        'submitted_at',
+        'created_at'
+    ];
+
 }

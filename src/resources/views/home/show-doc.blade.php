@@ -1,3 +1,7 @@
+@php
+use Illuminate\Support\Str;
+@endphp
+
 @extends('layout.main')
   
 @section('content')
@@ -608,144 +612,77 @@
   </div>
 
   <div class="documents-grid">
-    <a class="document-card" href="">
-      <div class="document-predocs-view">
-        <svg width="100%" height="100%" viewBox="0 0 220 280">
-          <rect fill="white" width="220" height="280"/>
-          <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Yaratish
-          </text>
-        </svg>
-      </div>
-      <div class="document-info">
-        <div class="document-details">
-          <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-          </svg>
-          <div>
-            <div class="document-title">it loyihallarni boshqarish 1...</div>
-            <div class="document-meta">Просмотрено: 09:18</div>
-          </div>
-        </div>
-        <button class="more-btn">⋮</button>
-      </div>
-    </a>
+    @foreach($doc_list as $document)
+    <a class="document-card" href="{{ route('form.show', $document->id) }}">
+        <div class="document-predocs-view" style="position: relative; width: 220px; height: 280px;">
+            <svg width="100%" height="100%" viewBox="0 0 220 280">
+                <rect fill="white" width="220" height="280"/>
+            </svg>
+            <!-- Plus icon -->
+            <div style="
+                position: absolute;
+                top: 50%;
+                left: 60%;
+                transform: translate(-50%, -50%);
+                width: 70px;
+                height: 70px;
+                background-color: #4CAF50;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 52px;
+                color: white;
+                cursor: pointer;
+            ">
+                +
+            </div>
+        </div> 
 
-    <a class="document-card" href="">
-      <div class="document-predocs-view">
-        <svg width="100%" height="100%" viewBox="0 0 220 280">
-          <rect fill="white" width="220" height="280"/>
-          <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Preview</text>
-        </svg>
-      </div>
-      <div class="document-info">
-        <div class="document-details">
-          <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-          </svg>
-          <div>
-            <div class="document-title">63036430b2369dfe92170...</div>
-            <div class="document-meta">16 окт. 2025 г.</div>
-          </div>
+        <div class="document-info">
+            <div class="document-details">
+                <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                </svg>
+                <div>
+                    <div class="document-title">{{ Str::limit($document->title, 25) }}</div>
+                    <div class="document-meta">
+                        Yaratilgan: {{ $document->created_at->format('d.m.Y H:i') }}
+                    </div>
+                </div>
+            </div>
+            <button class="more-btn">⋮</button>
         </div>
-        <button class="more-btn">⋮</button>
-      </div>
     </a>
+    @endforeach
+</div>
 
-    <a class="document-card" href="{{ route('form') }}">
-      <div class="document-predocs-view">
-        <svg width="100%" height="100%" viewBox="0 0 220 280">
-          <rect fill="white" width="220" height="280"/>
-          <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Yaratish</text>
-        </svg>
-      </div>
-      <div class="document-info">
-        <div class="document-details">
-          <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-          </svg>
-          <div>
-            <div class="document-title">c61682Bb-22a2-4571-9b9...</div>
-            <div class="document-meta">16 окт. 2025 г.</div>
-          </div>
-        </div>
-        <button class="more-btn">⋮</button>
-      </div>
-    </a>
-
-    <a class="document-card" href="">
-      <div class="document-predocs-view">
-        <svg width="100%" height="100%" viewBox="0 0 220 280">
-          <rect fill="white" width="220" height="280"/>
-          <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Yaratish</text>
-        </svg>
-      </div>
-      <div class="document-info">
-        <div class="document-details">
-          <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-          </svg>
-          <div>
-            <div class="document-title">1111</div>
-            <div class="document-meta">16 окт. 2025 г.</div>
-          </div>
-        </div>
-        <button class="more-btn">⋮</button>
-      </div>
-    </a>
-
-    <a class="document-card" href="">
-      <div class="document-predocs-view">
-        <svg width="100%" height="100%" viewBox="0 0 220 280">
-          <rect fill="white" width="220" height="280"/>
-          <text x="110" y="140" text-anchor="middle" font-size="12" fill="#5f6368">Document Yaratish</text>
-        </svg>
-      </div>
-      <div class="document-info">
-        <div class="document-details">
-          <svg class="doc-icon" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
-          </svg>
-          <div>
-            <div class="document-title">1234</div>
-            <div class="document-meta">16 окт. 2025 г.</div>
-          </div>
-        </div>
-        <button class="more-btn">⋮</button>
-      </div>
-    </a>
-  </div>
 </div>
 
 <script>
-// Birinchi dropdown
 const toggle = document.getElementById('dropdownToggle');
 const menu = document.getElementById('dropdownMenu');
 
 toggle.addEventListener('click', (e) => {
   e.stopPropagation();
   menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  // Ikkinchi dropdownni yopish
   document.getElementById('dropdownMenu2').style.display = 'none';
 });
 
-// Ikkinchi dropdown
 const toggle2 = document.getElementById('dropdownToggle2');
 const menu2 = document.getElementById('dropdownMenu2');
 
 toggle2.addEventListener('click', (e) => {
   e.stopPropagation();
   menu2.style.display = menu2.style.display === 'flex' ? 'none' : 'flex';
-  // Birinchi dropdownni yopish
   menu.style.display = 'none';
 });
 
-// Tashqariga bosilganda yopish
 document.addEventListener('click', () => {
   menu.style.display = 'none';
   menu2.style.display = 'none';
 });
 
-// Dropdown ichida bosilganda yopilmasligi uchun
 menu.addEventListener('click', (e) => {
   e.stopPropagation();
 });

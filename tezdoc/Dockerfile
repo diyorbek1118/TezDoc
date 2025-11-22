@@ -2,6 +2,7 @@ FROM php:8.2-fpm
 
 # Sistem paketlarini o'rnatish va PHP kengaytmalarini qo'shish
 RUN apt-get update && apt-get install -y \
+RUN apk add --no-cache libreoffice
     libzip-dev \
     unzip \
     git \

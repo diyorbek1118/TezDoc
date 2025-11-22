@@ -1,7 +1,7 @@
 @extends('layout.main')
 
 @section('content')
-@section('title', 'Form Page')
+@section('title', 'Ariza Formasi')
 
 <style>
     * {
@@ -22,7 +22,7 @@
         border-radius: 12px;
         padding: 50px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-        max-width: 900px;
+        max-width: 1200px;
         width: 100%;
         margin: 6rem auto;
         animation: slideIn 0.5s ease-out;
@@ -47,9 +47,24 @@
         font-weight: 600;
     }
 
+    .form-section {
+        margin-bottom: 35px;
+        padding: 25px;
+        background: #f8f9fa;
+        border-radius: 10px;
+        border-left: 4px solid #3498db;
+    }
+
+    .section-title {
+        color: #2c3e50;
+        font-size: 1.3em;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: capitalize;
+    }
+
     .formbox-group {
         margin-bottom: 20px;
-        animation: fadeIn 0.4s ease-out backwards;
     }
 
     .formbox-row {
@@ -59,24 +74,13 @@
         margin-bottom: 20px;
     }
 
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-            transform: translateX(-20px);
-        }
-        to {
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
     .formbox-label {
         display: block;
         margin-bottom: 8px;
         color: #333;
         font-weight: 600;
         font-size: 0.95em;
-        transition: color 0.3s ease;
+        text-transform: capitalize;
     }
 
     .formbox-input,
@@ -85,7 +89,7 @@
         width: 100%;
         padding: 12px 15px;
         border: 2px solid #e0e0e0;
-        border-radius: 10px;
+        border-radius: 8px;
         font-size: 1em;
         transition: all 0.3s ease;
         background: white;
@@ -97,7 +101,6 @@
         outline: none;
         border-color: #3498db;
         box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
-        transform: translateY(-1px);
     }
 
     .formbox-input:hover,
@@ -106,8 +109,9 @@
         border-color: #b3b3b3;
     }
 
-    .formbox-icon {
-        position: relative;
+    .formbox-textarea {
+        resize: vertical;
+        min-height: 100px;
     }
 
     .formbox-btn {
@@ -131,6 +135,12 @@
         box-shadow: 0 4px 12px rgba(52, 152, 219, 0.4);
     }
 
+    .formbox-btn:disabled {
+        background: #95a5a6;
+        cursor: not-allowed;
+        transform: none;
+    }
+
     .formbox-success {
         background: #27ae60;
         color: white;
@@ -152,16 +162,8 @@
         }
     }
 
-    .formbox-counter {
-        text-align: right;
-        font-size: 0.85em;
-        color: #999;
-        margin-top: 5px;
-    }
-
-    .formbox-textarea {
-        resize: vertical;
-        min-height: 100px;
+    .field-icon {
+        margin-right: 5px;
     }
 
     @media (max-width: 768px) {
@@ -174,97 +176,111 @@
         .formbox-row {
             grid-template-columns: 1fr;
         }
+        .form-section {
+            padding: 15px;
+        }
     }
 </style>
 
 <div class="formbox-container">
-    <h1 class="formbox-title">📋 Ro'yxatdan O'tish Formasi</h1>
+    <h1 class="formbox-title">📋 Shartnoma Formasi</h1>
 
-    <?php
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        echo '<div class="formbox-success">✅ Ma\'lumotlar muvaffaqiyatli yuborildi!</div>';
-
-        foreach ($_POST as $key => $value) {
-            if (!empty($value)) {
-                echo "<p><strong>" . htmlspecialchars($key) . ":</strong> " . htmlspecialchars($value) . "</p>";
-            }
-        }
-    }
-    ?>
+    @if(session('success'))
+        <div class="formbox-success">✅ {{ session('success') }}</div>
+    @endif
 
     <form method="POST" action="" id="mainForm">
-        <?php
-        $fields = [
-            ['name' => 'ism', 'label' => 'Ism', 'type' => 'text', 'placeholder' => 'Ismingizni kiriting', 'icon' => '👤'],
-            ['name' => 'familiya', 'label' => 'Familiya', 'type' => 'text', 'placeholder' => 'Familiyangizni kiriting', 'icon' => '👤'],
-            ['name' => 'email', 'label' => 'Email', 'type' => 'email', 'placeholder' => 'example@email.com', 'icon' => '📧'],
-            ['name' => 'telefon', 'label' => 'Telefon', 'type' => 'tel', 'placeholder' => '+998 90 123 45 67', 'icon' => '📱'],
-            ['name' => 'tugilgan_sana', 'label' => 'Tug\'ilgan sana', 'type' => 'date', 'placeholder' => '', 'icon' => '📅'],
-            ['name' => 'jinsi', 'label' => 'Jinsi', 'type' => 'select', 'options' => ['Erkak', 'Ayol'], 'icon' => '👥'],
-            ['name' => 'shahar', 'label' => 'Shahar', 'type' => 'select', 'options' => ['Toshkent', 'Samarqand', 'Buxoro', 'Xiva'], 'icon' => '🏙️'],
-            ['name' => 'kasb', 'label' => 'Kasb', 'type' => 'text', 'placeholder' => 'Kasbingizni kiriting', 'icon' => '💼'],
-            ['name' => 'tajriba', 'label' => 'Ish tajribasi (yil)', 'type' => 'number', 'placeholder' => '0', 'icon' => '⏱️'],
-            ['name' => 'izoh', 'label' => 'Qo\'shimcha ma\'lumot', 'type' => 'textarea', 'placeholder' => 'O\'zingiz haqingizda qisqacha...', 'icon' => '💬'],
-        ];
+        @csrf
 
-        $half = ceil(count($fields) / 2);
-        echo '<div class="formbox-row"><div>';
-        for ($i = 0; $i < count($fields); $i++) {
-            $field = $fields[$i];
-            if ($i == $half) echo '</div><div>';
-
-            echo '<div class="formbox-group">';
-            echo '<label class="formbox-label">' . $field['icon'] . ' ' . $field['label'] . '</label>';
-
-            if ($field['type'] === 'select') {
-                echo '<select name="' . $field['name'] . '" class="formbox-select" required>';
-                echo '<option value="">Tanlang...</option>';
-                foreach ($field['options'] as $option) {
-                    echo '<option value="' . $option . '">' . $option . '</option>';
+        @php
+            // Recursive funksiya - nested arraylarni ko'rib chiqish
+            function renderFields($fields, $parentKey = '') {
+                foreach ($fields as $key => $value) {
+                    $fieldName = $parentKey ? "{$parentKey}[{$key}]" : $key;
+                    $fieldId = $parentKey ? "{$parentKey}_{$key}" : $key;
+                    $label = ucfirst(str_replace('_', ' ', $key));
+                    
+                    if (is_array($value)) {
+                        // Agar array bo'lsa - yangi section yarat
+                        echo '<div class="form-section">';
+                        echo '<h3 class="section-title">' . $label . '</h3>';
+                        echo '<div class="formbox-row">';
+                        
+                        // Recursive chaqirish
+                        renderFields($value, $fieldName);
+                        
+                        echo '</div>';
+                        echo '</div>';
+                    } else {
+                        // Oddiy maydon - input yarat
+                        echo '<div class="formbox-group">';
+                        echo '<label class="formbox-label" for="' . $fieldId . '">';
+                        echo '<span class="field-icon">📝</span> ' . $label;
+                        echo '</label>';
+                        
+                        // Input turini aniqlash
+                        if (str_contains($key, 'sana') && !str_contains($key, 'kun') && !str_contains($key, 'oy') && !str_contains($key, 'yil')) {
+                            echo '<input type="date" name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-input">';
+                        } elseif (str_contains($key, 'email')) {
+                            echo '<input type="email" name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-input" placeholder="' . htmlspecialchars($value) . '">';
+                        } elseif (str_contains($key, 'telefon') || str_contains($key, 'phone')) {
+                            echo '<input type="tel" name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-input" placeholder="' . htmlspecialchars($value) . '">';
+                        } elseif (str_contains($key, 'manzil') || str_contains($key, 'qoshimcha_shartlar')) {
+                            echo '<textarea name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-textarea" placeholder="' . htmlspecialchars($value) . '"></textarea>';
+                        } else {
+                            echo '<input type="text" name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-input" placeholder="' . htmlspecialchars($value) . '">';
+                        }
+                        
+                        echo '</div>';
+                    }
                 }
-                echo '</select>';
-            } elseif ($field['type'] === 'textarea') {
-                echo '<textarea name="' . $field['name'] . '" class="formbox-textarea" id="textarea-' . $field['name'] . '" maxlength="500"></textarea>';
-                echo '<div class="formbox-counter" id="counter-' . $field['name'] . '">0 / 500</div>';
-            } else {
-                echo '<input type="' . $field['type'] . '" name="' . $field['name'] . '" class="formbox-input" placeholder="' . $field['placeholder'] . '" required>';
             }
+        @endphp
 
-            echo '</div>';
-        }
-        echo '</div></div>';
-        ?>
+        @php
+            // Formani render qilish
+            if (isset($fields) && is_array($fields)) {
+                renderFields($fields);
+            }
+        @endphp
 
-        <button type="submit" class="formbox-btn">📤 Ma'lumotlarni Yuborish</button>
+        <button type="submit" class="formbox-btn" id="submitBtn">
+            📤 Ma'lumotlarni Yuborish
+        </button>
     </form>
 </div>
 
 <script>
-    const textarea = document.getElementById('textarea-izoh');
-    const counter = document.getElementById('counter-izoh');
-    if (textarea) {
-        textarea.addEventListener('input', function() {
-            const count = this.value.length;
-            counter.textContent = count + ' / 500';
-            counter.style.color = count > 450 ? '#f44336' : count > 400 ? '#ff9800' : '#999';
-        });
-    }
-
-    document.getElementById('mainForm').addEventListener('submit', function() {
-        const btn = this.querySelector('button');
+    document.getElementById('mainForm').addEventListener('submit', function(e) {
+        const btn = document.getElementById('submitBtn');
         btn.textContent = '⏳ Yuborilmoqda...';
-        btn.style.background = '#27ae60';
+        btn.disabled = true;
+        btn.style.background = '#95a5a6';
     });
 
+    // Input focus animatsiyasi
     const inputs = document.querySelectorAll('.formbox-input, .formbox-select, .formbox-textarea');
     inputs.forEach(input => {
         input.addEventListener('focus', function() {
             const label = this.closest('.formbox-group').querySelector('.formbox-label');
             if (label) label.style.color = '#3498db';
         });
+        
         input.addEventListener('blur', function() {
             const label = this.closest('.formbox-group').querySelector('.formbox-label');
             if (label) label.style.color = '#333';
+        });
+    });
+
+    // Telefon raqamini formatlash
+    const phoneInputs = document.querySelectorAll('input[type="tel"]');
+    phoneInputs.forEach(input => {
+        input.addEventListener('input', function(e) {
+            let value = e.target.value.replace(/\D/g, '');
+            if (value.startsWith('998')) {
+                value = '+998 ' + value.substring(3, 5) + ' ' + value.substring(5, 8) + '-' + value.substring(8, 10) + '-' + value.substring(10, 12);
+            }
+            e.target.value = value;
         });
     });
 </script>

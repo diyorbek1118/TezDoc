@@ -3,7 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\DocumentController;
+use App\Http\Controllers\Documents\DocumentController;
+use App\Http\Controllers\FileUploadController;
 use App\Http\Controllers\TemplateController;
 
 Route::get('/', function () {
@@ -23,6 +24,9 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 
+Route::post('file-upload',[FileUploadController::class,'upload'])->name('file.upload');
+Route::get('file-upload/file-edit', [FileUploadController::class,'convertToHtml'])->name('file-edit');
+Route::get('/edit/{filename}', [FileUploadController::class, 'editDoc'])->name('editDoc');
 
 Route::middleware('guest')->group(function () {
     Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
@@ -44,13 +48,16 @@ Route::get('shartnoma',function(){
 Route::get('ariza',function(){
     return view('document_template.ariza_doc.doimiy_yashash_manzil_iltimosnoma');
 });
-Route::get('form',function(){
-    return view('home.form_data');
-})->name('form');
+Route::get('/form/{id}', [DocumentController::class, 'document_fields'])->name('form.show');
 
-Route::get('show',function(){
-    return view('home.show-doc');
-})->name('show');
+
+
+Route::get('show', [DocumentController::class,'index'])->name('show');
+
+Route::get('file-upload',function(){
+    return view('home.file_upload');
+})->name('file.upload');
+
 
 Route::get('test',function(){
     return view('test');

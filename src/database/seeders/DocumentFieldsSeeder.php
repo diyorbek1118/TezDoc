@@ -1,15 +1,19 @@
 <?php
 
-namespace Database\Factories;
+namespace Database\Seeders;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
-
-
-class DocumentCategoryFactory extends Factory
+class DocumentFieldsSeeder extends Seeder
 {
-   public  $ariza = [
-    'arizachi' => [
+    public function run(): void
+    {
+        $document_fields = [
+            [
+                'document_id' =>1,
+                'ariza_data' => json_encode([
+                    $ariza = [
         'manzil' => [
             'viloyat' => 'Toshkent shahri',
             'tuman' => 'Yunusobod tumani',
@@ -51,11 +55,15 @@ class DocumentCategoryFactory extends Factory
             'tugilgan_joy' => 'Toshkent sh.'
         ]
     ]
-];
-    
-    public function definition(): array
-    {
-        return [
+                ], JSON_UNESCAPED_UNICODE),
+                'submitted_at' => null,
+                'created_at' => now(),
+                'updated_at' => now()
+            ]
         ];
+
+        DB::table('document_fields')->insert($document_fields);
     }
 }
+
+

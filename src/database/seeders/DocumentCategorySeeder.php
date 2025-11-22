@@ -14,6 +14,7 @@ class DocumentCategorySeeder extends Seeder
             [
                 'name' => 'ariza_doc',
                 'slug' => Str::slug('Arizalar'),
+                'description'=> 'Turli xildagi arizalar',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -21,6 +22,7 @@ class DocumentCategorySeeder extends Seeder
             [
                 'name' => 'shartnoma_doc',
                 'slug' => Str::slug('Shartnomalar'),
+                'description'=> 'Turli xildagi shartnomalar',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -28,6 +30,7 @@ class DocumentCategorySeeder extends Seeder
             [
                 'name' => 'shaxsiy_doc', 
                 'slug' => Str::slug('Shaxsiy hujjatlar'),
+                'description'=> 'Turli xildagi hujjatlar',
                 'created_at' => now(),
                 'updated_at' => now()
             ],
