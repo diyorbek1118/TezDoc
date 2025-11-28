@@ -188,12 +188,11 @@
     @if(session('success'))
         <div class="formbox-success">✅ {{ session('success') }}</div>
     @endif
-
-    <form method="POST" action="" id="mainForm">
+    <form method="POST" action="{{  route('doc.data') }}" id="mainForm">
         @csrf
 
+        <input type="hidden" name="document_id" value="{{ $document_id ?? '' }}">
         @php
-            // Recursive funksiya - nested arraylarni ko'rib chiqish
             function renderFields($fields, $parentKey = '') {
                 foreach ($fields as $key => $value) {
                     $fieldName = $parentKey ? "{$parentKey}[{$key}]" : $key;
@@ -201,24 +200,20 @@
                     $label = ucfirst(str_replace('_', ' ', $key));
                     
                     if (is_array($value)) {
-                        // Agar array bo'lsa - yangi section yarat
                         echo '<div class="form-section">';
                         echo '<h3 class="section-title">' . $label . '</h3>';
                         echo '<div class="formbox-row">';
                         
-                        // Recursive chaqirish
                         renderFields($value, $fieldName);
                         
                         echo '</div>';
                         echo '</div>';
                     } else {
-                        // Oddiy maydon - input yarat
                         echo '<div class="formbox-group">';
                         echo '<label class="formbox-label" for="' . $fieldId . '">';
                         echo '<span class="field-icon">📝</span> ' . $label;
                         echo '</label>';
                         
-                        // Input turini aniqlash
                         if (str_contains($key, 'sana') && !str_contains($key, 'kun') && !str_contains($key, 'oy') && !str_contains($key, 'yil')) {
                             echo '<input type="date" name="' . $fieldName . '" id="' . $fieldId . '" class="formbox-input">';
                         } elseif (str_contains($key, 'email')) {
@@ -238,7 +233,6 @@
         @endphp
 
         @php
-            // Formani render qilish
             if (isset($fields) && is_array($fields)) {
                 renderFields($fields);
             }
@@ -258,7 +252,6 @@
         btn.style.background = '#95a5a6';
     });
 
-    // Input focus animatsiyasi
     const inputs = document.querySelectorAll('.formbox-input, .formbox-select, .formbox-textarea');
     inputs.forEach(input => {
         input.addEventListener('focus', function() {
@@ -272,7 +265,6 @@
         });
     });
 
-    // Telefon raqamini formatlash
     const phoneInputs = document.querySelectorAll('input[type="tel"]');
     phoneInputs.forEach(input => {
         input.addEventListener('input', function(e) {

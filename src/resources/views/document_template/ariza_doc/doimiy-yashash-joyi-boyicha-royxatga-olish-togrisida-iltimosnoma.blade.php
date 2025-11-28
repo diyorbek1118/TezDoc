@@ -1,51 +1,3 @@
-<?php
-// Ariza uchun ma'lumotlar
-$ariza = [
-    'arizachi' => [
-        'manzil' => [
-            'viloyat' => 'Toshkent shahri',
-            'tuman' => 'Yunusobod tumani',
-            'kocha' => 'Amir Temur ko\'chasi',
-            'uy_raqam' => '45'
-        ],
-        'fio' => 'Karimov Kamol Kamalovich',
-        'uy_joy_manzil' => [
-            'viloyat' => 'Toshkent shahri',
-            'tuman' => 'Yunusobod tumani',
-            'kocha' => 'Amir Temur ko\'chasi',
-            'uy_raqam' => '45',
-            'xonadon_raqam' => '12'
-        ]
-    ],
-    
-    'ariza_rekvizit' => [
-        'tashkilot' => 'Yunusobod tumani hokimiyati',
-        'sana' => '20.10.2025'
-    ],
-    
-    'mazmun' => [
-        'umumiy_maydon' => '75.5',
-        'royxatga_olinuvchi_fio' => 'Karimova Dilnoza Kamalovna',
-        'mulkdor_fio' => 'Karimov Kamol Kamalovich'
-    ],
-    
-    'oila_azolari' => [
-        [
-            'qarindoshlik' => 'Rafiqasi',
-            'fio' => 'Karimova Dilnoza Kamalovna',
-            'tugilgan_yil' => '1990',
-            'tugilgan_joy' => 'Toshkent sh.'
-        ],
-        [
-            'qarindoshlik' => 'O\'g\'li',
-            'fio' => 'Karimov Javohir Kamalovich',
-            'tugilgan_yil' => '2015',
-            'tugilgan_joy' => 'Toshkent sh.'
-        ]
-    ]
-];
-?>
-
 <!DOCTYPE html>
 <html lang="uz">
 <head>
@@ -322,18 +274,27 @@ $ariza = [
     <div class="container">
         <div class="header">
             <div class="header-content">
-                <p><?php echo htmlspecialchars($ariza['ariza_rekvizit']['tashkilot']); ?>iga</p>
-                <p><?php echo htmlspecialchars($ariza['arizachi']['manzil']['viloyat']); ?>, <?php echo htmlspecialchars($ariza['arizachi']['manzil']['tuman']); ?>da</p>
-                <p>yashovchi <?php echo htmlspecialchars($ariza['arizachi']['fio']); ?>dan</p>
+                <p>{{ $fields['ariza_rekvizit']['tashkilot'] ?? '' }}ga</p>
+                <p>{{ $fields['manzil']['viloyat'] ?? '' }}, {{ $fields['manzil']['tuman'] ?? '' }}da</p>
+                <p>yashovchi {{ $fields['fio'] ?? '' }}dan</p>
             </div>
         </div>
 
         <div class="title">ARIZA</div>
 
         <div class="content">
-            Mening egaligimda bo'lgan, <?php echo htmlspecialchars($ariza['arizachi']['uy_joy_manzil']['viloyat']); ?>, <?php echo htmlspecialchars($ariza['arizachi']['uy_joy_manzil']['tuman']); ?>, <?php echo htmlspecialchars($ariza['arizachi']['uy_joy_manzil']['kocha']); ?>, <?php echo htmlspecialchars($ariza['arizachi']['uy_joy_manzil']['uy_raqam']); ?>-uy, <?php echo htmlspecialchars($ariza['arizachi']['uy_joy_manzil']['xonadon_raqam']); ?>-xonadonda joylashgan umumiy foydalanish maydoni <?php echo htmlspecialchars($ariza['mazmun']['umumiy_maydon']); ?> kv/m dan iborat bo'lgan xonadonga fuqaro <?php echo htmlspecialchars($ariza['mazmun']['royxatga_olinuvchi_fio']); ?>ni quyidagi oila a'zolari bilan birga doimiy ro'yxatga qo'yishingizni so'rayman.
+            Mening egaligimda bo'lgan, 
+            {{ $fields['uy_joy_manzil']['viloyat'] ?? '' }}, 
+            {{ $fields['uy_joy_manzil']['tuman'] ?? '' }}, 
+            {{ $fields['uy_joy_manzil']['kocha'] ?? '' }}, 
+            {{ $fields['uy_joy_manzil']['uy_raqam'] ?? '' }}-uy, 
+            {{ $fields['uy_joy_manzil']['xonadon_raqam'] ?? '' }}-xonadonda joylashgan 
+            umumiy foydalanish maydoni {{ $fields['mazmun']['umumiy_maydon'] ?? '' }} kv/m dan iborat bo'lgan 
+            xonadonga fuqaro {{ $fields['mazmun']['royxatga_olinuvchi_fio'] ?? '' }}ni 
+            quyidagi oila a'zolari bilan birga doimiy ro'yxatga qo'yishingizni so'rayman.
         </div>
 
+        @if(isset($fields['oila_azolari']) && count($fields['oila_azolari']) > 0)
         <div class="table-container">
             <table>
                 <thead>
@@ -344,24 +305,25 @@ $ariza = [
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($ariza['oila_azolari'] as $aza): ?>
+                    @foreach($fields['oila_azolari'] as $aza)
                     <tr>
-                        <td><?php echo htmlspecialchars($aza['qarindoshlik']); ?></td>
-                        <td><?php echo htmlspecialchars($aza['fio']); ?></td>
-                        <td><?php echo htmlspecialchars($aza['tugilgan_yil']); ?> yil, <?php echo htmlspecialchars($aza['tugilgan_joy']); ?></td>
+                        <td>{{ $aza['qarindoshlik'] ?? '' }}</td>
+                        <td>{{ $aza['fio'] ?? '' }}</td>
+                        <td>{{ $aza['tugilgan_yil'] ?? '' }} yil, {{ $aza['tugilgan_joy'] ?? '' }}</td>
                     </tr>
-                    <?php endforeach; ?>
+                    @endforeach
                 </tbody>
             </table>
         </div>
+        @endif
 
         <div class="footer">
             <div class="signature-line">
                 <div>Imzo __________________</div>
-                <div><?php echo htmlspecialchars($ariza['mazmun']['mulkdor_fio']); ?></div>
+                <div>{{ $fields['mazmun']['mulkdor_fio'] ?? '' }}</div>
             </div>
             <div class="signature-line">
-                <div><?php echo htmlspecialchars($ariza['ariza_rekvizit']['sana']); ?> yil</div>
+                <div>{{ $fields['ariza_rekvizit']['sana'] ?? '' }} yil</div>
             </div>
         </div>
 
@@ -380,7 +342,6 @@ $ariza = [
     </div>
 
     <script>
-        // Chop etish sozlamalari
         window.onbeforeprint = function() {
             document.title = 'Ariza';
         };
