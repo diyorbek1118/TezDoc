@@ -23,10 +23,9 @@ Route::middleware(['auth'])->group(function () {
     });
     Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
-Route::get('/download-doc', [FileUploadController::class, 'download'])
-    ->name('download.doc');
 
-    Route::get('file-upload/file-edit', [FileUploadController::class,'convertToHtml'])->name('file-edit');
+Route::post('file-upload',[FileUploadController::class,'upload'])->name('file.upload');
+Route::get('file-upload/file-edit', [FileUploadController::class,'convertToHtml'])->name('file-edit');
 Route::get('/edit/{filename}', [FileUploadController::class, 'editDoc'])->name('editDoc');
 
 

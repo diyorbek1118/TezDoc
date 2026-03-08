@@ -1,3 +1,5 @@
+version: "3.9"
+
 services:
   app:
     build:
@@ -10,6 +12,7 @@ services:
       - tezdoc
     depends_on:
       - db
+      - onlyoffice
 
   db:
     image: mysql:8.0
@@ -37,6 +40,18 @@ services:
       - ./src:/var/www/html
     depends_on:
       - app
+    networks:
+      - tezdoc
+
+  onlyoffice:
+    image: onlyoffice/documentserver:latest
+    container_name: onlyoffice
+    environment:
+    - JWT_ENABLED=true
+    - JWT_SECRET=a7f3c9e2b1d4f6a8c5e7b9d1f3a5c7e9b2d4f6a8c1e3b5d7f9a2c4e6b8d1f3a5  # ✅ Bir xil
+    - JWT_IN_BODY=true
+    ports:
+      - "8081:80"
     networks:
       - tezdoc
 

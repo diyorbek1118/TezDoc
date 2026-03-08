@@ -3,42 +3,46 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
+use Illuminate\Support\Facades\Storage;
 
 class FileUploadController extends Controller
 {
-    // UPLOAD
     public function upload(Request $request)
-    {
-        $request->validate([
-            'file' => 'required|mimes:docx|max:5120',
-        ]);
+{
+    $request->validate([
+        'file' => 'required|mimes:docx|max:5120',
+    ]);
 
-        $file = $request->file('file');
+    $file = $request->file('file');
+    $filename = $file->store('uploads', 'public');
 
-        $file->storeAs(
-            'public/uploads',
-            'file1132564251.docx'
-        );
+    // Redirect to OnlyOffice editor
+    return redirect()->route('editDoc', ['filename' => $filename]);
+}
 
-        return redirect('/download');
-    }
+ public function editDoc($filename)
+{
+    $fileUrl = asset('storage/' . $filename); // Public URL
 
-    // DOWNLOAD
-    public function download()
-    {
-        $filePath = storage_path('app/public/uploads/file1132564251.docx');
-
-        if (!file_exists($filePath)) {
-            abort(404, 'File topilmadi');
-        }
-
-        return response()->download(
-            $filePath,
-            'file1132564251.docx',
-            [
-                'Content-Type' =>
-                    'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+    $onlyofficeConfig = [
+        'document' => [
+            'title' => $filename,
+            'url' => $fileUrl,
+            'fileType' => 'docx',
+            'key' => uniqid(),
+        ],
+        'documentType' => 'word',
+        'editorConfig' => [
+            'callbackUrl' => route('saveEditedDoc', ['filename' => $filename]),
+            'user' => [
+                'id' => 1,
+                'name' => 'User'
             ]
-        );
-    }
+        ]
+    ];
+
+    return view('onlyoffice_editor', compact('onlyofficeConfig'));
+}
+
 }
