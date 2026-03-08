@@ -15,11 +15,11 @@
                   <div class="col-lg-12">
                     <h6>Onlayn hujjat yaratish xizmati</h6>
                     <h2>AI asosidagi yuridik hujjat generatori.</h2>
-                    <p>TezDoc – hujjat yaratishni soddalashtiruvchi tizim. Ushbu shablon faqat shaxsiy yoki tijorat loyihalaringizda foydalanish uchun mo‘ljallangan.</p>
+                    <p>TezDoc – hujjat yaratishni soddalashtiruvchi tizim. Ushbu shablon faqat shaxsiy yoki tijorat loyihalaringizda foydalanish uchun mo'ljallangan.</p>
                   </div>
                   <div class="col-lg-12">
                     <div class="border-first-button scroll-to-section">
-                      <a href="#contact">Yo‘riqnoma</a>
+                      <a href="#contact">Yo'riqnoma</a>
                     </div>
                   </div>
                 </div>
@@ -53,7 +53,7 @@
                   <h4>Tez hujjatlar,  <em>Oson yechimlar</em></h4>
                   <div class="line-dec"></div>
                 </div>
-                <p>TezDoc loyihasi sizga hujjatlarni tez, qulay va xatolarsiz yaratishda yordam beradi. Platformadan shaxsiy va tijorat maqsadlarida bemalol foydalanishingiz mumkin.TezDoc — zamonaviy O‘zbekiston uchun yaratilgan hujjat tizimi..</p>
+                <p>TezDoc loyihasi sizga hujjatlarni tez, qulay va xatolarsiz yaratishda yordam beradi. Platformadan shaxsiy va tijorat maqsadlarida bemalol foydalanishingiz mumkin.TezDoc — zamonaviy O'zbekiston uchun yaratilgan hujjat tizimi..</p>
                 <div class="skills">
   <div class="skill">
     <div class="outer-circle" style="--percent:90; --color:#4da6e7;">
@@ -147,7 +147,7 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Yangi Avlod Kontent Yaratish Texnologiyasi</h4>
-                                <p>Sun’iy intellekt asosida ishlovchi ilg‘or tizim yordamida siz matn, maqola, reklama yoki hujjatlarni bir necha soniyada yaratishingiz mumkin. AI texnologiyasi sizning uslubingizni, maqsadingizni va soha talablarini tahlil qilib, aniq va sifatli natija taqdim etadi.</p>
+                                <p>Sun'iy intellekt asosida ishlovchi ilg'or tizim yordamida siz matn, maqola, reklama yoki hujjatlarni bir necha soniyada yaratishingiz mumkin. AI texnologiyasi sizning uslubingizni, maqsadingizni va soha talablarini tahlil qilib, aniq va sifatli natija taqdim etadi.</p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Matn yaratish</span> <span><i class="fa fa-check"></i> AI tahrir</span> <span><i class="fa fa-check"></i> Avto kontent</span>
                                   <span><i class="fa fa-check"></i> AI yordamchi</span> <span><i class="fa fa-check"></i> Kreativ yozuv</span> <span><i class="fa fa-check"></i> Yozuv tizimi</span></div>
                                 <p>Har bir foydalanuvchi uchun moslashuvchan, tezkor va ishonchli yechimlarni taklif etadi.</p>
@@ -169,11 +169,11 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>AI  &amp; Tahrirlash</h4>
-                                <p>AI bilan tahrirlash yordamida yuqori darajasidagi natijani qisqa vaqt ichida qo‘lga kiritadi. Ushbu texnologiya kontentchi, marketing mutaxassislari va yozuvchilar uchun ideal yechim bo‘lib, matnlarni yaratish jarayonini avtomatlashtiradi.</p>
+                                <p>AI bilan tahrirlash yordamida yuqori darajasidagi natijani qisqa vaqt ichida qo'lga kiritadi. Ushbu texnologiya kontentchi, marketing mutaxassislari va yozuvchilar uchun ideal yechim bo'lib, matnlarni yaratish jarayonini avtomatlashtiradi.</p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Ai tahrir</span> <span><i class="fa fa-check"></i> Gramatika</span> <span><i class="fa fa-check"></i> Kontent</span>
                                   <span><i class="fa fa-check"></i> Uslub</span> <span><i class="fa fa-check"></i> Optimizatsiya</span> </div>
                                 <p>
-                                  Sun’iy intellekt yordamida matnni tahrirlash — yozuvni tez, aniq.
+                                  Sun'iy intellekt yordamida matnni tahrirlash — yozuvni tez, aniq.
                                 </p>
                               </div>
                             </div>
@@ -193,10 +193,10 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Optimallashtirilgan Shablonlar</h4>
-                                <p>Shablonlar — bu oldindan tayyorlangan matn, dizayn yoki strukturali kontent andozalari bo‘lib, ularni ishlatib tez va samarali kontent yaratish mumkin.</p>
+                                <p>Shablonlar — bu oldindan tayyorlangan matn, dizayn yoki strukturali kontent andozalari bo'lib, ularni ishlatib tez va samarali kontent yaratish mumkin.</p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Shablonlar</span> <span><i class="fa fa-check"></i> Moslashuvchan</span> <span><i class="fa fa-check"></i> Professional</span>
                                   <span><i class="fa fa-check"></i> Automatlashtirilgan</span> <span><i class="fa fa-check"></i> Samarali</span> <span><i class="fa fa-check"></i> Tezkor</span></div>
-                                <p>Moslashuvchan shablonlar bilan yozuv jarayoni samarali bo‘ladi.</p>
+                                <p>Moslashuvchan shablonlar bilan yozuv jarayoni samarali bo'ladi.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -215,7 +215,7 @@
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
                                 <h4>Tez va oson PDF/DOC konvertatsiya vositasi</h4>
-                                <p>PDF/DOC konvertor — bu hujjatlarni bir formatdan boshqa formatga tez va oson o‘zgartirish vositasi. Foydalanuvchi PDF faylni DOC (Word) ga yoki aksincha DOC faylni PDF ga aylantirishi mumkin.</p>
+                                <p>PDF/DOC konvertor — bu hujjatlarni bir formatdan boshqa formatga tez va oson o'zgartirish vositasi. Foydalanuvchi PDF faylni DOC (Word) ga yoki aksincha DOC faylni PDF ga aylantirishi mumkin.</p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Avtomatik</span> <span><i class="fa fa-check"></i> PDF ↔ DOC</span> <span><i class="fa fa-check"></i> Sifatli</span>
                                   <span><i class="fa fa-check"></i> Tezkor</span> <span><i class="fa fa-check"></i> Format</span> <span><i class="fa fa-check"></i> Professional</span></div>
                                 <p>PDF va DOC fayllarni oson, tez va professional tarzda konvertatsiya qilish imkoniyati.</p>
@@ -236,11 +236,11 @@
                           <div class="row">
                             <div class="col-lg-6 align-self-center">
                               <div class="left-text">
-                                <h4>Ma’lumotlaringiz xavfsizligini ta’minlash tizimi</h4>
-                                <p>Xavfsizlik — bu foydalanuvchi va tizim ma’lumotlarini himoya qilish jarayoni. U ma’lumotlarni ruxsatsiz kirishlardan, buzilishlardan, o‘g‘rilik va zararli dasturlardan saqlashni ta’minlaydi.</p>
+                                <h4>Ma'lumotlaringiz xavfsizligini ta'minlash tizimi</h4>
+                                <p>Xavfsizlik — bu foydalanuvchi va tizim ma'lumotlarini himoya qilish jarayoni. U ma'lumotlarni ruxsatsiz kirishlardan, buzilishlardan, o'g'rilik va zararli dasturlardan saqlashni ta'minlaydi.</p>
                                 <div class="ticks-list"><span><i class="fa fa-check"></i> Xavfsizlik</span> <span><i class="fa fa-check"></i>Shifrlash</span> <span><i class="fa fa-check"></i> Autentifikatsiya</span>
-                                  <span><i class="fa fa-check"></i> Nazorat</span> <span><i class="fa fa-check"></i> Ma’lumot xavfsizligi</span> <span><i class="fa fa-check"></i>Ishonchli tizim</span></div>
-                                <p>Xavfsizlik foydalanuvchi ishonchini oshiradi, kontent va ma’lumotlarni himoyalaydi hamda tizimning uzluksiz ishlashini ta’minlaydi.</p>
+                                  <span><i class="fa fa-check"></i> Nazorat</span> <span><i class="fa fa-check"></i> Ma'lumot xavfsizligi</span> <span><i class="fa fa-check"></i>Ishonchli tizim</span></div>
+                                <p>Xavfsizlik foydalanuvchi ishonchini oshiradi, kontent va ma'lumotlarni himoyalaydi hamda tizimning uzluksiz ishlashini ta'minlaydi.</p>
                               </div>
                             </div>
                             <div class="col-lg-6 align-self-center">
@@ -262,7 +262,6 @@
     </div>
   </div>
 
-  
  <style>
     .upload-wrapper {
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -274,7 +273,6 @@
         padding: 20px;
         margin-top: 80px;
     }
-
     .upload-container {
         background: white;
         border-radius: 20px;
@@ -283,14 +281,32 @@
         width: 100%;
         box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
     }
-
     .upload-title {
         font-size: 32px;
-        margin-bottom: 30px;
+        margin-bottom: 8px;
         color: #1a202c;
         font-weight: 600;
     }
-
+    .upload-subtitle {
+        font-size: 14px;
+        color: #718096;
+        margin-bottom: 24px;
+    }
+    .format-badges {
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+    }
+    .format-badge {
+        padding: 4px 12px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .badge-pdf  { background: #FFF5F5; color: #E53E3E; border: 1px solid #FEB2B2; }
+    .badge-docx { background: #EBF8FF; color: #2B6CB0; border: 1px solid #90CDF4; }
+    .badge-doc  { background: #E6FFFA; color: #276749; border: 1px solid #81E6D9; }
     .upload-drop-zone {
         border: 3px dashed #cbd5e0;
         border-radius: 12px;
@@ -301,12 +317,10 @@
         background: #f7fafc;
         margin-bottom: 20px;
     }
-
     .upload-drop-zone:hover {
         border-color: #667eea;
         background: #edf2f7;
     }
-
     .upload-drop-icon {
         width: 60px;
         height: 60px;
@@ -319,27 +333,17 @@
         font-size: 30px;
         color: #718096;
     }
-
     .upload-drop-text {
         font-size: 18px;
         color: #4a5568;
         margin-bottom: 10px;
     }
-
     .upload-drop-limit {
         font-size: 14px;
         color: #a0aec0;
     }
-
-    .upload-file-input {
-        display: none;
-    }
-
-    .upload-file-list {
-        margin-top: 20px;
-        min-height: 50px;
-    }
-
+    .upload-file-input { display: none; }
+    .upload-file-list { margin-top: 20px; min-height: 50px; }
     .upload-file-item {
         display: flex;
         align-items: center;
@@ -350,14 +354,12 @@
         margin-bottom: 15px;
         background: white;
     }
-
     .upload-file-info {
         display: flex;
         align-items: center;
         gap: 15px;
         flex: 1;
     }
-
     .upload-file-icon {
         width: 50px;
         height: 50px;
@@ -368,14 +370,31 @@
         justify-content: center;
         font-size: 24px;
     }
-
+    .upload-file-icon.icon-pdf  { background: #FFF5F5; }
+    .upload-file-icon.icon-docx { background: #EBF8FF; }
+    .upload-file-icon.icon-doc  { background: #E6FFFA; }
     .upload-file-name {
         font-size: 16px;
         font-weight: 600;
         color: #1a202c;
         word-break: break-all;
     }
-
+    .upload-file-meta {
+        font-size: 12px;
+        color: #a0aec0;
+        margin-top: 3px;
+    }
+    .upload-file-arrow {
+        font-size: 18px;
+        color: #667eea;
+        margin: 0 12px;
+    }
+    .upload-output-badge {
+        font-size: 12px;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 50px;
+    }
     .upload-action-btn {
         width: 40px;
         height: 40px;
@@ -387,20 +406,15 @@
         align-items: center;
         justify-content: center;
         font-size: 18px;
+        margin-left: 10px;
     }
-
-    .upload-action-btn:hover {
-        border-color: #fc8181;
-        color: #fc8181;
-    }
-
+    .upload-action-btn:hover { border-color: #fc8181; color: #fc8181; }
     .upload-submit-section {
         margin-top: 30px;
         text-align: center;
         padding: 20px;
         border-top: 2px solid #e2e8f0;
     }
-
     .upload-submit-btn {
         background: #667eea;
         color: white;
@@ -412,26 +426,22 @@
         cursor: pointer;
         transition: all 0.3s ease;
     }
-
     .upload-submit-btn:hover {
         background: #5568d3;
         transform: translateY(-2px);
         box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
     }
-
     .upload-submit-btn:disabled {
         background: #cbd5e0;
         cursor: not-allowed;
         transform: none;
     }
-
     .upload-no-files {
         text-align: center;
         padding: 40px;
         color: #a0aec0;
         font-size: 16px;
     }
-
     .upload-error-alert {
         background: #fed7d7;
         border: 2px solid #fc8181;
@@ -440,7 +450,6 @@
         margin-bottom: 20px;
         color: #c53030;
     }
-
     .upload-success-alert {
         background: #c6f6d5;
         border: 2px solid #48bb78;
@@ -453,8 +462,20 @@
 
 <div class="upload-wrapper">
     <div class="upload-container">
-        <h1 class="upload-title">Upload Files</h1>
-        
+        <h1 class="upload-title">📄 Fayl Konvertatsiya</h1>
+        <p class="upload-subtitle">DOC/DOCX → PDF yoki PDF → DOCX ga aylantiring</p>
+
+        {{-- Format badges --}}
+        <div class="format-badges">
+            <span class="format-badge badge-pdf">📕 PDF</span>
+            <span style="color:#CBD5E0;align-self:center;">⇄</span>
+            <span class="format-badge badge-docx">📘 DOCX</span>
+            <span style="color:#CBD5E0;align-self:center;">·</span>
+            <span class="format-badge badge-doc">📗 DOC</span>
+            <span style="color:#CBD5E0;align-self:center;">→</span>
+            <span class="format-badge badge-pdf">📕 PDF</span>
+        </div>
+
         @if ($errors->any())
             <div class="upload-error-alert">
                 <strong>⚠️ Xatolik:</strong>
@@ -471,32 +492,34 @@
                 <strong>✓ {{ session('success') }}</strong>
             </div>
         @endif
+
         @if (session('error'))
             <div class="upload-error-alert">
-                <strong>✓ {{ session('error') }}</strong>
+                <strong>⚠️ {{ session('error') }}</strong>
             </div>
         @endif
 
-        <form id="uploadForm" action="{{ route('file.upload') }}" method="POST" enctype="multipart/form-data">
+        <form id="uploadForm" action="{{ route('file.convert') }}" method="POST" enctype="multipart/form-data">
             @csrf
             
-            <div class="upload-drop-zone" onclick="document.getElementById('uploadFileInput').click();">
+            {{-- PDF, DOC va DOCX qabul qiladi --}}
+            <div class="upload-drop-zone" id="uploadDropZone" onclick="document.getElementById('uploadFileInput').click();">
                 <div class="upload-drop-icon">
-                    <span>📄</span>
+                    <span>📂</span>
                 </div>
-                <div class="upload-drop-text">Click to choose DOC/DOCX files</div>
-                <div class="upload-drop-limit">Only .doc and .docx files | Max 10 MB</div>
+                <div class="upload-drop-text">Faylni bosing yoki shu yerga tashlang</div>
+                <div class="upload-drop-limit">PDF, DOC, DOCX | Maksimal 20 MB</div>
             </div>
 
-            <input type="file" id="uploadFileInput" name="file" class="upload-file-input" accept=".doc,.docx">
+            <input type="file" id="uploadFileInput" name="file" class="upload-file-input" accept=".pdf,.doc,.docx">
 
             <div class="upload-file-list" id="uploadFileList">
-                <div class="upload-no-files">Hali fayl yuklanmagan</div>
+                <div class="upload-no-files">Hali fayl tanlanmagan</div>
             </div>
 
             <div class="upload-submit-section">
                 <button type="submit" class="upload-submit-btn" id="uploadSubmitBtn" disabled>
-                    Upload Files
+                    Konvertatsiya qilish
                 </button>
             </div>
         </form>
@@ -504,61 +527,97 @@
 </div>
 
 <script>
-    const uploadFileInput = document.getElementById('uploadFileInput');
-    const uploadFileList = document.getElementById('uploadFileList');
-    const uploadSubmitBtn = document.getElementById('uploadSubmitBtn');
+(function () {
+    const fileInput   = document.getElementById('uploadFileInput');
+    const fileList    = document.getElementById('uploadFileList');
+    const submitBtn   = document.getElementById('uploadSubmitBtn');
+    const dropZone    = document.getElementById('uploadDropZone');
 
-    let uploadFiles = [];
+    const MAX_SIZE    = 20 * 1024 * 1024;
+    const ALLOWED     = ['pdf', 'doc', 'docx'];
 
-    uploadFileInput.addEventListener('change', (e) => {
-        uploadFiles = [];
-        Array.from(e.target.files).forEach(file => {
-            const ext = file.name.split('.').pop().toLowerCase();
-            if ((ext === 'doc' || ext === 'docx') && file.size <= 10 * 1024 * 1024) {
-                uploadFiles.push(file);
-            } else if (ext !== 'doc' && ext !== 'docx') {
-                alert(`${file.name} - faqat DOC/DOCX fayllar ruxsat etilgan!`);
-            } else {
-                alert(`${file.name} - maksimal hajm 10 MB!`);
-            }
-        });
-        renderFiles();
+    // format → chiqadigan format
+    const outputMap   = { pdf: 'DOCX', docx: 'PDF', doc: 'PDF' };
+    const icons       = { pdf: '📕', docx: '📘', doc: '📗' };
+    const iconClass   = { pdf: 'icon-pdf', docx: 'icon-docx', doc: 'icon-doc' };
+    const badgeClass  = { PDF: 'badge-pdf', DOCX: 'badge-docx' };
+
+    let currentFile = null;
+
+    // ── Drag & Drop ──────────────────────────────────────────────────────────
+    dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.style.borderColor = '#667eea'; });
+    dropZone.addEventListener('dragleave', () => { dropZone.style.borderColor = '#cbd5e0'; });
+    dropZone.addEventListener('drop', e => {
+        e.preventDefault();
+        dropZone.style.borderColor = '#cbd5e0';
+        if (e.dataTransfer.files.length) applyFile(e.dataTransfer.files[0]);
     });
 
-    function renderFiles() {
-        if (uploadFiles.length === 0) {
-            uploadFileList.innerHTML = '<div class="upload-no-files">Hali fayl yuklanmagan</div>';
-            uploadSubmitBtn.disabled = true;
+    fileInput.addEventListener('change', e => {
+        if (e.target.files.length) applyFile(e.target.files[0]);
+    });
+
+    function applyFile(file) {
+        const ext = file.name.split('.').pop().toLowerCase();
+
+        if (!ALLOWED.includes(ext)) {
+            alert('Faqat PDF, DOC yoki DOCX fayllar qabul qilinadi!');
+            return;
+        }
+        if (file.size > MAX_SIZE) {
+            alert('Fayl hajmi 20 MB dan oshmasligi kerak!');
             return;
         }
 
-        uploadSubmitBtn.disabled = false;
-        uploadFileList.innerHTML = uploadFiles.map((file, index) => `
+        // Drag-drop holatida input ga sync qilish
+        const dt = new DataTransfer();
+        dt.items.add(file);
+        fileInput.files = dt.files;
+
+        currentFile = file;
+        renderFile(file, ext);
+    }
+
+    function renderFile(file, ext) {
+        const outputFmt = outputMap[ext];
+        const sizeFmt   = formatBytes(file.size);
+
+        fileList.innerHTML = `
             <div class="upload-file-item">
                 <div class="upload-file-info">
-                    <div class="upload-file-icon">📄</div>
-                    <div class="upload-file-name">${file.name}</div>
+                    <div class="upload-file-icon ${iconClass[ext]}">${icons[ext]}</div>
+                    <div>
+                        <div class="upload-file-name">${file.name}</div>
+                        <div class="upload-file-meta">${sizeFmt} · ${ext.toUpperCase()}</div>
+                    </div>
                 </div>
-                <button type="button" class="upload-action-btn" onclick="removeFile(${index})">🗑️</button>
+                <span class="upload-file-arrow">→</span>
+                <span class="upload-output-badge ${badgeClass[outputFmt]}">${outputFmt}</span>
+                <button type="button" class="upload-action-btn" onclick="removeFile()">🗑️</button>
             </div>
-        `).join('');
+        `;
+        submitBtn.disabled = false;
     }
 
-    function removeFile(index) {
-        uploadFiles.splice(index, 1);
-        const dt = new DataTransfer();
-        uploadFiles.forEach(file => dt.items.add(file));
-        uploadFileInput.files = dt.files;
-        renderFiles();
-    }
+    window.removeFile = function () {
+        fileInput.value = '';
+        currentFile = null;
+        fileList.innerHTML = '<div class="upload-no-files">Hali fayl tanlanmagan</div>';
+        submitBtn.disabled = true;
+    };
 
     document.getElementById('uploadForm').addEventListener('submit', () => {
-        uploadSubmitBtn.disabled = true;
-        uploadSubmitBtn.textContent = 'Yuklanmoqda...';
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Konvertatsiya qilinmoqda...';
     });
+
+    function formatBytes(bytes) {
+        if (bytes < 1024)        return bytes + ' B';
+        if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+        return (bytes / (1024 * 1024)).toFixed(2) + ' MB';
+    }
+})();
 </script>
-
-
 
   <div id="contact" class="contact-us section">
     <div class="container">
@@ -581,14 +640,14 @@
               </div>
               <div class="col-lg-5">
                 <div id="map">
-<iframe 
-  src="https://maps.google.com/maps?q=Samarkand,+Uzbekistan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-  width="100%" 
-  height="636px" 
-  frameborder="0" 
-  style="border:0" 
-  allowfullscreen>
-</iframe>
+                  <iframe 
+                    src="https://maps.google.com/maps?q=Samarkand,+Uzbekistan&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="636px" 
+                    frameborder="0" 
+                    style="border:0" 
+                    allowfullscreen>
+                  </iframe>
                 </div>
               </div>
               <div class="col-lg-7">
@@ -636,7 +695,7 @@
                     </div>
                     <div class="col-lg-12">
                       <fieldset>
-                        <button type="submit" id="form-submit" class="main-button ">Send Message Now</button>
+                        <button type="submit" id="form-submit" class="main-button">Send Message Now</button>
                       </fieldset>
                     </div>
                   </div>
@@ -649,5 +708,4 @@
     </div>
   </div>
 
-  @endsection
-  <div></div>
+@endsection

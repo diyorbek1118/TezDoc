@@ -1,8 +1,7 @@
 FROM php:8.2-fpm
 
-# Sistem paketlarini o'rnatish va PHP kengaytmalarini qo'shish
+# Sistem paketlari + LibreOffice + PHP kengaytmalari
 RUN apt-get update && apt-get install -y \
-RUN apk add --no-cache libreoffice
     libzip-dev \
     unzip \
     git \
@@ -10,10 +9,14 @@ RUN apk add --no-cache libreoffice
     libpng-dev \
     libonig-dev \
     libxml2-dev \
-    && docker-php-ext-install pdo pdo_mysql mbstring bcmath zip gd
+    libreoffice \
+    libreoffice-writer \
+    libreoffice-pdfimport \
+    --no-install-recommends \
+    && docker-php-ext-install pdo pdo_mysql mbstring bcmath zip gd \
+    && rm -rf /var/lib/apt/lists/*
 
 # Composer o'rnatish
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 
 WORKDIR /var/www/html
-

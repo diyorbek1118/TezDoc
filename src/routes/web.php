@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FileConvertController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
@@ -67,4 +68,7 @@ Route::get('test',function(){
     return view('test');
 });
 
+Route::get('/convert', [FileConvertController::class, 'index'])->name('file.convert.page');
 
+// Fayl qabul qilish va konvertatsiya
+Route::post('/convert', [FileConvertController::class, 'convert'])->name('file.convert');
